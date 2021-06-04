@@ -25,11 +25,11 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Which city would you like to analyze? chicago, new york city, or washington ')
     if city.lower() in CITY_DATA.keys():
-        print('You selected' +' '+ city)
+        print('The chosen city is' +' '+ city)
     else:
         print('Incorrect City. Try again')
         city = input('Which city would you like to analyze? chicago, new york city, or washington ')
-        print('You selected' +' '+ city)
+        print('The chosen city is' +' '+ city)
     # TO DO: get user input for month (all, january, february, ... , june)
     months = ['january', 'feburary', 'march', 'april', 'may', 'june' ,'all']
     month = input('What month would you like to analyze? Type month or Type all for all months ')
@@ -211,10 +211,10 @@ def main():
         
         rand_five = df[['Start Time', 'End Time', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year']]
         print(rand_five.sample(n=5))
-        more_results = input('Would you like to see more results?: yes or no ')
+        more_results = input('Would you like to see additional results?: yes or no ')
         while more_results.lower() == 'yes':
             print(rand_five.sample(n=5))
-            more_results = input('Would you like to see more results?: yes or no ')
+            more_results = input('Would you like to see additional results?: yes or no ')
             
         
                
