@@ -211,10 +211,10 @@ def main():
         
         rand_five = df[['Start Time', 'End Time', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year']]
         print(rand_five.sample(n=5))
-        more_results = input('Would you like to see more results?: yes or no ')
+        more_results = input('Would you like to see additional results?: yes or no ')
         while more_results.lower() == 'yes':
             print(rand_five.sample(n=5))
-            more_results = input('Would you like to see more results?: yes or no ')
+            more_results = input('Would you like to see additional results?: yes or no ')
             
         
                
