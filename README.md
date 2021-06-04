@@ -13,7 +13,7 @@ Describe what your project is about and what it does
 This project is the anaylsis of bikeshare trips in Chicago New York City and Washington
 ### Files used
 Include the files used
-chicago.csv new_york_city.csv washington.csv
+The following CSV files were used for data: chicago.csv new_york_city.csv washington.csv
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 https://github.com/udacity/pdsnd_github
