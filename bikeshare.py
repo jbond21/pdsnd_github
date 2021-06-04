@@ -25,11 +25,11 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Which city would you like to analyze? chicago, new york city, or washington ')
     if city.lower() in CITY_DATA.keys():
-        print('You selected' +' '+ city)
+        print('The chosen city is' +' '+ city)
     else:
         print('Incorrect City. Try again')
         city = input('Which city would you like to analyze? chicago, new york city, or washington ')
-        print('You selected' +' '+ city)
+        print('The chosen city is' +' '+ city)
     # TO DO: get user input for month (all, january, february, ... , june)
     months = ['january', 'feburary', 'march', 'april', 'may', 'june' ,'all']
     month = input('What month would you like to analyze? Type month or Type all for all months ')
